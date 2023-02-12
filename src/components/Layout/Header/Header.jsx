@@ -4,12 +4,12 @@ import classes from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 import HeaderImage from "./HeaderImage/";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <header className={classes.header}>
         <h1>Food App</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onShowCart={props.onShowCart} />
       </header>
       <HeaderImage />
     </>
