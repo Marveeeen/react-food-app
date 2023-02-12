@@ -4,7 +4,7 @@ import classes from "./MealItem.module.css";
 import MealItemForm from "./MealItemForm";
 
 const MealItem = (props) => {
-  const price = `$${props.price.toFixed(2)}`;
+  const price = `₱${props.price.toFixed(2)}`;
 
   return (
     <li className={classes.meal}>
